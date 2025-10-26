@@ -68,8 +68,8 @@ function renderRates(data, container) {
     );
 
     if (rates.length === 0) {
-          container.innerHTML = `<p class="text-muted">Даних для цієї дати немає.</p>`;
-          return;
+            container.innerHTML = `<p class="text-muted">Даних для цієї дати немає.</p>`;
+            return;
     }
 
     const header = (container === ratesTodayContainer) ? '' : `<h5 class="mb-3">Курс на ${data.date}</h5>`;
